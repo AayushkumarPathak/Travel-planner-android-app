@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:padding="24dp">
+
+    <!-- Background Rounded Layout -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_rounded"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore Beauty\nOf Journey"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingTop="30dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everything you can imagine, is here"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/travel_illustration"
+            android:layout_marginTop="20dp" />
+
+        <!-- Explore Button -->
+        <LinearLayout
+            android:id="@+id/btn_explore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@android:color/white" /> <!-- Changed android:tint to app:tint -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swipe to Explore Now"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <!-- Privacy Policy -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</RelativeLayout>

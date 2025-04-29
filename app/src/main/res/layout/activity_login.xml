@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:id="@+id/login_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/ivLoginImage"
+            android:layout_width="167dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Login Image"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_travel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:textColorHint="@color/gray500"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textColorHint="@color/gray500"
+            android:inputType="textPassword"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/gray900"
+            android:padding="12dp" />
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register here"
+            android:textColor="@color/blue600"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+</ScrollView>
