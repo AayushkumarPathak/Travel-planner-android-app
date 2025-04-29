@@ -4,13 +4,16 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.techmagnet.travelplanner.models.Note
 import com.techmagnet.travelplanner.models.Trip
+import com.techmagnet.travelplanner.payloads.NoteDao
 import com.techmagnet.travelplanner.payloads.TripDao
 
-@Database(entities = [Trip::class], version = 1)
+@Database(entities = [Trip::class,Note::class], version = 2)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun tripDao(): TripDao
+    abstract fun noteDao(): NoteDao
 
 
     companion object {
